@@ -88,10 +88,6 @@ footer {
     
    
 }
-.links {
-    outline: none;
-    color: red;
-}
 
 html, body {
     height: 100%;
@@ -118,22 +114,35 @@ hr {
     align-items: center;
     width: 800px;
 
-
-}
-.footer-left span {
-    margin-left: 180px;
-    color: white;
-}
-.footer-right {
-   margin-right: 88px;
-   text-align: right;
-   gap: 20px;
-   
+    .links {
+        outline: none;
+        color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
 }
 .footer-left {
-    margin-left: 25px;
-    gap: 20px;
+    margin-left: 20px;
+    color: white;
+  
 }
+.footer-center {
+ margin-left: 500px;
+
+
+}
+
+.footer-right {
+   margin-right: 10px;
+   text-align: right;
+   margin-top: 0;
+
+
+}
+
 p  {
     color: white;
     margin-left: 25px;
@@ -190,6 +199,8 @@ h3 a {
     font-size: 20px;
     margin-right: 20px;
     color: white;
+    justify-content: flex-end;
+    flex-wrap: wrap;
  }
    
 
@@ -208,7 +219,12 @@ h3 a {
     box-sizing: border-box;
  
 }
-
+@media (max-width: 480) {
+    button {
+        width: 100%;
+        font-size: 12px;
+    }
+}
 
 
 
@@ -217,4 +233,3 @@ h3 a {
    
 
 
-}
